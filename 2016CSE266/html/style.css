@@ -1,0 +1,28 @@
+body {
+	font-family:arial;
+	background-color: #ecf0f1;
+	background-image:url("https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg");
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+h3 {
+	font-size:40px;
+	color:#e67e22;
+	margin-left:70%;
+	font-weight:100;
+	letter-spacing:5px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 8px #ecf0f1;
+}
+p.p1 {
+	font-weight:500;
+	color:#ecf0f1;
+	font-size:20px;
+	margin-left:70%;
+}
+a {
+	color:#ecf0f1;
+	font-size:23px;
+	text-decoration:none;
+}
+

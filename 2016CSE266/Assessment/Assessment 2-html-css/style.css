@@ -1,0 +1,148 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    max-height: 2000px;
+    min-height: 1200px;
+}
+
+.bg {
+    height: 500px;
+    width: 100%;
+    background-image: url(Infra_09.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.log {
+    position: absolute;
+    margin-left: 90%;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    border-style: solid;
+    border-color: transparent;
+    height: 200;
+    top: 200px;
+}
+
+.log img {
+    width: 40px;
+}
+
+.log img:hover {
+    width: 45px;
+}
+
+.log a:hover {
+    background-color: transparent;
+}
+
+.btn {
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.welcome {
+    margin-left: 25px;
+    margin: 25px;
+    float: left;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.bp {
+    width: "100%";
+    background-color: beige;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+h4 {
+    color: aliceblue;
+}
+
+.nav {
+    top: 500px;
+    height: 50px;
+    position: relative;
+    width: 90%;
+    padding-top: 20px;
+    background-color: #073d67;
+}
+
+.det {
+    top: 500px;
+    height: 50px;
+    position: absolute;
+    width: 40px;
+    padding-top: 20px;
+    background-color: #d8e5ee;
+}
+
+img {
+    padding-left: 5px;
+    float: left;
+    width: 300px;
+}
+
+a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: orange;
+    color: #073d67;
+}
+
+.btn {
+    height: 500px;
+}
+
+.copy {
+    color: white;
+    margin: 50px;
+}
+
+p {
+    margin: 10px;
+}
+
+.con {
+    margin-top: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+.box {
+    margin: 5px;
+    background-color: #073d67;
+    color: white;
+    height: 300px;
+}
+
+.box:hover {
+    margin: 5px;
+    background-color: rgb(255, 165, 0);
+    color: #073d67;
+    height: 300px;
+}
+
+.welcome:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+    color: #073d67;
+}
+
+h4:hover {
+    color: #073d67;
+}
