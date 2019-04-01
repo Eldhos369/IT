@@ -1,0 +1,151 @@
+<html>
+<head>
+<style type="text/css">
+body{
+	background-color:#119044;
+	color:#119044;
+		
+}
+h3{
+	
+}
+
+div{
+	background-color:white;	
+	width:250px;
+	margin-left:40%;
+	margin-top:50px;;
+	padding:40px;
+}
+#sub{
+	background-color:#119044;
+	color:white;
+	margin-top:8px;
+	border:0px;
+	padding:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#name,#mob{
+	border:2px solid #119044;
+	margin-top:6px;
+	padding:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#sem,#br{
+	background-color:#119044;
+	color:white;
+	border:0px;
+	padding:5px;
+	padding-left:5px;
+	padding-right:5px;
+	width:100px;
+	margin-left:4px;
+	margin-top:6px;
+}
+#br{
+margin-left:6px;
+}
+</style>
+
+<script>
+
+var k=0;
+function multi1(){
+	k++;
+}
+function multi(){
+	var names=prompt("Enter your team member name");
+	var id=prompt("Enter your team member ID");
+	if(names.length<3){
+		alert("Name is less than 3");
+		return false;
+	}else{
+		var i=0;
+		while(i<names.length){
+			if(!((names.charAt(i)>="a"&&names.charAt(i)<="z")||(names.charAt(i)>="A"&&names.charAt(i)<="Z"))){
+				alert("Name is not valid");
+				return false;
+			}
+			i++;
+		}
+	}
+	var dat="Name :"+names+"<br/>"+"UID  :"+id+"<br/>"
+	document.getElementById("mem").innerHTML=dat;
+	k++;
+}
+function validate(){
+	var name=document.getElementById("name").value;
+	var mob=document.getElementById("mob").value;
+	
+	if(name==""){
+		alert("Enter your name");
+		return false;
+	}else if(name.length<3){
+		alert("Name is less than 3");
+		return false;
+	}else{
+		var i=0;
+		while(i<name.length){
+			if(!((name.charAt(i)>="a"&&name.charAt(i)<="z")||(name.charAt(i)>="A"&&name.charAt(i)<="Z"))){
+				alert("Name is not valid");
+				return false;
+			}
+			i++;
+		}
+	}
+	if(mob==""){
+		alert("Enter your mobile number");
+		return false;
+	}else if(mob.length<10||mob.length>10){
+		alert("Number is not valid");
+		return false;
+	}else{
+		var i=0;
+		while(i<mob.length){
+			if(!((mob.charAt(i)>=0&&mob.charAt(i)<=9))){
+				alert("number is not valid");
+				return false;
+			}
+			i++;
+		}
+	}
+	if(k==0){
+		alert("Enter event type");
+		return false;
+	}
+}
+
+</script>
+</head>
+<body>
+	<div align="center">
+		<h3>REGISTRATION FORM</h3>
+		<form method="post" onSubmit="return validate();">
+			<input type="text" id="name" placeholder="Enter your name"><br/>
+			<input type="text" id="mob" placeholder="Enter your mobile number"><br/>
+			<span>Single</span><input type="Radio" name="g" id="s" onClick="return multi1();" value="false"">Group<input type="Radio" id="m" onClick="return multi();" name="g"><br/>
+			<span id="mem"></span>
+			<span style="margin-left:14px;">Branch  </span>
+			<select id="br">
+				<option value="0">CSE</option>
+				<option value="1">ECE</option>
+				<option value="2">EEE</option>
+			</select><br/>
+			<span>Semester</span>
+			<select id="sem">
+				<option value="0">I</option>
+				<option value="1">II</option>
+				<option value="2">III</option>		
+				<option value="3">IV</option>
+				<option value="4">V</option>
+				<option value="5">VI</option>
+				<option value="6">VII</option>
+				<option value="7">VIII</option>
+			</select><br/>
+			<input type="submit" id="sub" value="Register"><br/>
+		</form>
+	</div>
+</body>
+</html>

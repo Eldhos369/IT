@@ -1,0 +1,78 @@
+<html>
+<head>
+<style type="text/css">
+body{
+	background-color:#119044;
+	color:#119044;
+		
+}
+h3{
+	
+}
+
+div{
+	background-color:white;	
+	width:250px;
+	margin-left:40%;
+	margin-top:50px;;
+	padding:40px;
+}
+#sub{
+	background-color:#119044;
+	color:white;
+	margin-top:8px;
+	border:0px;
+	padding:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#name,#pass{
+	border:2px solid #119044;
+	margin-top:6px;
+	padding:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+</style>
+
+<script>
+var i=0;
+function validate(){
+	var name=document.getElementById("name").value;
+	var pass=document.getElementById("pass").value;
+	
+	if(i==2){
+		alert("Time out");
+		return false;
+	}
+	if(name==""){
+		alert("Enter UID");
+		return false;
+	}else if(pass==""){
+		
+		alert("Enter Password");
+		return false;
+	}else if(!(name=="2016CSE266"&& pass=="2016CSE266")){
+		alert("Invalid uid or password");
+		document.getElementById("name").value="";
+		document.getElementById("pass").value="";
+		i++;
+		return false;
+	}
+	
+}
+
+</script>
+</head>
+<body>
+	<div align="center">
+		<h3>LOGIN FORM</h3>
+		<form method="post" onSubmit="return validate();">
+			<input type="text" id="name" placeholder="Enter UID"><br/>
+			<input type="password" id="pass" placeholder="Enter your password"><br/>
+			<input type="submit" id="sub" value="Login"><br/>
+		</form>
+	</div>
+</body>
+</html>
